@@ -24,6 +24,6 @@ import scivision
 
 cat = scivision.load_dataset("./")
 
-images = cat.parakeet_4v1w_x1.read()
+images = cat.parakeet_4V1W_1_particle_still.read()
 
 ```
