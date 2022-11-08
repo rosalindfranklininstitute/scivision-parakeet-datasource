@@ -1,6 +1,7 @@
 import pytest
 import scivision
 
+
 @pytest.fixture
 def dataset():
     return scivision.load_dataset("./")

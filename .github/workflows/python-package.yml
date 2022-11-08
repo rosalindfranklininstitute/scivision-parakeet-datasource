@@ -55,7 +55,7 @@ jobs:
         python -m pip install -e .
 
     - name: Run black --check
-      run: black --check src tests
+      run: black --check .
 
     - name: Lint with flake8
       run: |
