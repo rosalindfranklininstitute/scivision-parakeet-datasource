@@ -1,0 +1,89 @@
+sources:
+
+    parakeet_4V1W_1_particle_still:
+        description: A single image of a single apoferritin particle embedded in ice
+        driver: scivision_parakeet
+        args:
+            config:
+                microscope:
+                  beam:
+                    electrons_per_angstrom: 60
+                    energy: 300
+                    source_spread: 0.02
+                  detector:
+                    nx: 1000
+                    ny: 1000
+                    pixel_size: 1
+                  lens:
+                    c_10: -30000
+                    c_30: 2.7
+                    c_c: 2.7
+                sample:
+                  box:
+                  - 1000
+                  - 1000
+                  - 1000
+                  centre:
+                  - 500
+                  - 500
+                  - 500
+                  molecules: 
+                    pdb:
+                      - id: 4v1w
+                        instances: 1
+                  shape:
+                    cube:
+                      length: 1000.0
+                    type: cube
+                scan:
+                  mode: still
+                  num_images: 1
+                  start_angle: 0
+                  step_angle: 0
+                simulation:
+                  ice: true
+    
+    parakeet_4V1W_100_particles_tilt_series:
+        description: A tilt series of 100 apoferritin particle embedded in ice
+        driver: scivision_parakeet
+        args:
+            config:
+                microscope:
+                  beam:
+                    electrons_per_angstrom: 3.5
+                    energy: 300
+                    source_spread: 0.02
+                  detector:
+                    nx: 4000
+                    ny: 4000
+                    pixel_size: 1
+                  lens:
+                    c_10: -30000
+                    c_30: 2.7
+                    c_c: 2.7
+                sample:
+                  box:
+                  - 4000
+                  - 4000
+                  - 4000
+                  centre:
+                  - 2000
+                  - 2000
+                  - 2000
+                  molecules: 
+                    pdb:
+                      - id: 4v1w
+                        instances: 100
+                  shape:
+                    cuboid:
+                      length_x: 4000.0
+                      length_y: 4000.0
+                      length_z: 300.0
+                    type: cuboid
+                scan:
+                  mode: tilt_series
+                  num_images: 40
+                  start_angle: -60
+                  step_angle: 3
+                simulation:
+                  ice: true
