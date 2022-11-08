@@ -24,7 +24,7 @@ def main():
         install_requires=[
             "python-parakeet",
             "scivision",
-            "scivision-parakeet@git+https://github.com/rosalindfranklininstitute/scivision-parakeet@main",
+            "scivision-parakeet@git+https://github.com/rosalindfranklininstitute/scivision-parakeet.git@main",
         ],
         setup_requires=["pytest-runner"],
         tests_require=["pytest"],
