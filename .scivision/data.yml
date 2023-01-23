@@ -9,7 +9,7 @@ sources:
                   beam:
                     electrons_per_angstrom: 60
                     energy: 300
-                    source_spread: 0.02
+                    illumination_semiangle: 0.02
                   detector:
                     nx: 1000
                     ny: 1000
@@ -52,7 +52,7 @@ sources:
                   beam:
                     electrons_per_angstrom: 3.5
                     energy: 300
-                    source_spread: 0.02
+                    illumination_semiangle: 0.02
                   detector:
                     nx: 4000
                     ny: 4000
